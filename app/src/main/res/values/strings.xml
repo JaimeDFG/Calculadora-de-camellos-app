@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora de camellos</string>
+    <string name="titulo">Calculadora de camellos</string>
+    <string name="tituloS">Elije tu sexo</string>
+    <string name="playBTN">Jugar</string>
+    <string name="settingsBTN">Ajustes</string>
+
+    <string name="maleBTN">Hombre</string>
+    <string name="femaleBTN">Mujer</string>
+
+</resources>

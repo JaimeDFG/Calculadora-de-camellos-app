@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Male">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/mainmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/arena3">
+
+            <ImageView
+                android:id="@+id/maleappimage"
+                android:contentDescription="Calculadora para hombre"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/male"
+                android:backgroundTint="@color/male"
+                app:srcCompat="@drawable/ic_hombre" />
+
+            <LinearLayout
+                android:layout_below="@+id/maleappimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:text="Marca tu opción"
+                    android:textAlignment="center"
+                    android:textColor="#4CAF50"
+                    android:textColorLink="#CF2929"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Edad"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/edadT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="menos de 15 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad1"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15 - 25 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad2"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25 - 35 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad3"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="35 - 50 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad4"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50 - 75 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad5"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="más de 75 años"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/edad6"
+                            android:onClick="mEdad">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Altura"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/alturaT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="menos de 1.50 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura1"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1.50 - 1.60 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura2"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1.60 - 1.70 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura3"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1.70 - 1.80 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura4"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1.80 - 1.90 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura5"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="más de 1.90 m"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/altura6"
+                            android:onClick="mAltura">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Forma corporal"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/imgForma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgendo"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="70dp"
+                            app:srcCompat="@mipmap/endomorfo">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imgecto"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="70dp"
+                            app:srcCompat="@mipmap/ectomorfo">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imgmeso"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="70dp"
+                            app:srcCompat="@mipmap/mesomorfo">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/cuerpoT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Endomorfo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/cuerpo1"
+                            android:onClick="mCuerpo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Ectomorfo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/cuerpo2"
+                            android:onClick="mCuerpo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Mesomorfo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/cuerpo3"
+                            android:onClick="mCuerpo">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Largo de pelo"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/largoT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calvo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/largo1"
+                            android:onClick="mLargo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Corto"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/largo2"
+                            android:onClick="mLargo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medio"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/largo3"
+                            android:onClick="mLargo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Largo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/largo4"
+                            android:onClick="mLargo">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Color de pelo"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/peloT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Negro"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/pelo1"
+                            android:onClick="mPelo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Castaño"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/pelo2"
+                            android:onClick="mPelo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rubio"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/pelo3"
+                            android:onClick="mPelo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pelirrojo"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/pelo4"
+                            android:onClick="mPelo">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Otro"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/pelo5"
+                            android:onClick="mPelo">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Color de ojos"
+                        android:layout_margin="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/ojosT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marrones"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ojos1"
+                            android:onClick="mOjos">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Azules"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ojos2"
+                            android:onClick="mOjos">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Verdes"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ojos3"
+                            android:onClick="mOjos">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Grises"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ojos4"
+                            android:onClick="mOjos">
+                        </RadioButton>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Negros"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ojos5"
+                            android:onClick="mOjos">
+                        </RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/calcularH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/calculate_button"
+                        android:text="Calcular">
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
