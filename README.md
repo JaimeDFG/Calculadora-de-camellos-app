@@ -1,2 +1,2 @@
 # Calculadora-de-camellos-app
-Aplicación que permite conocer a cantidad de camellos que vale una persona según su descripción física
+Aplicación que permite conocer la cantidad de camellos que vale una persona según su descripción física
